@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Property Inspector",
+    "slug": "kurz-immobilien-ag",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coliluan.kurzimmobilienag",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "This app needs access to camera to take photos during property inspections.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to select photos for property inspections."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.coliluan.kurzimmobilienag",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you select images for property inspections.",
+          "cameraPermission": "The app accesses your camera to let you take photos for property inspections."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a0089031-57dc-4652-8473-87af4730caba"
+      }
+    },
+    "owner": "coliluan",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a0089031-57dc-4652-8473-87af4730caba"
+    }
+  }
+}

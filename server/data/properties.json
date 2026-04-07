@@ -1,0 +1,390 @@
+{
+  "properties": [
+    {
+      "_id": "68ee393878c57ef0fa250a05",
+      "name": "Modern Map Studio",
+      "propertyType": "Studio",
+      "address": {
+        "street": "Bahn Map Strasse",
+        "city": "Zurich",
+        "state": "ZH",
+        "zipCode": "8001",
+        "country": "Switzerland"
+      },
+      "coordinates": {
+        "lat": 47.38632687578816,
+        "lng": 8.485307693481447
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 0.5,
+        "squareFeet": 110
+      },
+      "rent_price": 1900,
+      "status": "Available",
+      "description": "In Zürich bestaunen Sie die historischen Gebäude der Altstadt, flanieren durch die weltberühmte Bahnhofstrasse und geniessen den Zürichsee. Zürich bietet Ihnen einen einzigartigen Mix: Eine Metropole mit vielen Sehenswürdigkeiten trifft auf Wasser, Natur und Berge. Einfach spektakulär!",
+      "features": "Klimaanlage, Balkon, Minibar",
+      "yearBuilt": 2022,
+      "parking": "Garage",
+      "petFriendly": true,
+      "furnished": true,
+      "images": [
+        "/uploads/2025-10-14/1760442679820-601719497.jpg",
+        "/uploads/2025-10-14/1760442679851-808865480.jpg",
+        "/uploads/2025-10-14/1760442679861-854005881.jpg",
+        "/uploads/2025-10-14/1760442679864-276516357.jpg",
+        "/uploads/2025-10-14/1760442680306-137464136.jpg",
+        "/uploads/2025-10-14/1760442680313-303889174.jpg"
+      ],
+      "pdf": "/uploads/2025-10-14/1760442680315-391801243.pdf",
+      "defects": [],
+      "createdAt": "2025-10-14T11:51:20.370Z",
+      "updatedAt": "2025-10-14T11:51:20.370Z",
+      "__v": 0,
+      "_database": {
+        "name": "ledrinushi",
+        "source": "database"
+      }
+    },
+    {
+      "name": "ledri json test",
+      "propertyType": "House",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "ZH",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": 47.37776513113086,
+        "lng": 8.532493114471437
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 122
+      },
+      "rent_price": 2577,
+      "status": "Available",
+      "description": "desc",
+      "features": "",
+      "yearBuilt": 2022,
+      "parking": "Parking",
+      "petFriendly": false,
+      "furnished": true,
+      "images": [
+        "/uploads/2025-10-22/1761120701033-239936550.png",
+        "/uploads/2025-10-22/1761120701037-635288174.png",
+        "/uploads/2025-10-22/1761120701038-693747900.png"
+      ],
+      "pdf": "/uploads/2025-10-22/1761120701482-220939418.pdf",
+      "defects": [],
+      "_id": "68f891bd1fd99a75d0e9fd55",
+      "createdAt": "2025-10-22T08:11:41.550Z",
+      "updatedAt": "2025-10-22T08:11:41.550Z",
+      "__v": 0
+    },
+    {
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "zh",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": 47.37843579153701,
+        "lng": 8.533512353897097
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 111
+      },
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "69297aa1ce16ed1168b0a9a5",
+      "name": "test",
+      "propertyType": "Apartment",
+      "rent_price": 1200,
+      "status": "Available",
+      "description": "",
+      "features": "",
+      "yearBuilt": 2025,
+      "parking": "Garage",
+      "petFriendly": false,
+      "furnished": false,
+      "images": [],
+      "pdf": "",
+      "defects": [],
+      "createdAt": "2025-11-28T10:34:09.661Z",
+      "updatedAt": "2025-11-28T10:40:26.843Z",
+      "__v": 0,
+      "entrances": [
+        {
+          "entranceName": "ts",
+          "entranceNumber": "ts",
+          "floors": [
+            {
+              "floorNumber": "1",
+              "units": [
+                {
+                  "unitNumber": "1c",
+                  "unitType": "apartment",
+                  "size": 111,
+                  "bedrooms": 2,
+                  "bathrooms": 1,
+                  "rentPrice": 2222,
+                  "status": "Available",
+                  "tenant": "john dor",
+                  "notes": "",
+                  "_id": "69297c1aeb64e36dc433f563"
+                }
+              ],
+              "_id": "69297c1aeb64e36dc433f562"
+            }
+          ],
+          "_id": "69297c1aeb64e36dc433f561"
+        }
+      ],
+      "documents": [],
+      "interventions": []
+    },
+    {
+      "name": "Vorbulla Studio",
+      "propertyType": "Studio",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "zh",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": 47.377011819933884,
+        "lng": 8.538104295730593
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 111
+      },
+      "rent_price": 2500,
+      "status": "Available",
+      "description": "desc",
+      "features": "climate",
+      "yearBuilt": 2022,
+      "parking": "parking",
+      "petFriendly": true,
+      "furnished": true,
+      "images": [],
+      "pdf": "",
+      "defects": [],
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "692d5d16453c3829edc2de64",
+      "documents": [],
+      "interventions": [],
+      "entrances": [],
+      "createdAt": "2025-12-01T09:17:10.229Z",
+      "updatedAt": "2025-12-01T09:17:10.229Z",
+      "__v": 0
+    },
+    {
+      "name": "Vorbulla Studio",
+      "propertyType": "Studio",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": 47.376506881991865,
+        "lng": 8.536527156829836
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 110.9
+      },
+      "rent_price": 1245,
+      "status": "Available",
+      "description": "ds",
+      "features": "clim",
+      "yearBuilt": 2022,
+      "parking": "parking",
+      "petFriendly": false,
+      "furnished": false,
+      "images": [],
+      "pdf": "",
+      "defects": [],
+      "objectId": "692d5c39ea7502d56dcb2480",
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "692d5de20ca9d7ff8fca2599",
+      "documents": [],
+      "interventions": [],
+      "entrances": [],
+      "createdAt": "2025-12-01T09:20:34.871Z",
+      "updatedAt": "2025-12-01T09:20:34.871Z",
+      "__v": 0
+    },
+    {
+      "name": "f",
+      "propertyType": "Apartment",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "zh",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 123
+      },
+      "rent_price": 2222,
+      "status": "Available",
+      "description": "d",
+      "features": "klim",
+      "yearBuilt": 2022,
+      "parking": "parking",
+      "petFriendly": false,
+      "furnished": false,
+      "images": [],
+      "pdf": "",
+      "defects": [],
+      "objectId": "692d5c39ea7502d56dcb2480",
+      "unitId": "692d65b6bd449b1627ab7208",
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "692d67713cc457f0d4b46a86",
+      "documents": [],
+      "interventions": [],
+      "entrances": [],
+      "createdAt": "2025-12-01T10:01:21.610Z",
+      "updatedAt": "2025-12-01T10:01:21.610Z",
+      "__v": 0
+    },
+    {
+      "name": "Lokal 01",
+      "propertyType": "Studio",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "ZH",
+        "zipCode": "1000",
+        "country": "Albania"
+      },
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "size": {
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "squareFeet": 85
+      },
+      "rent_price": 3000,
+      "status": "Available",
+      "description": "",
+      "features": "",
+      "yearBuilt": 1998,
+      "parking": "Outside",
+      "petFriendly": false,
+      "furnished": false,
+      "images": [
+        "/api/images/6937ec57fc5debd93f32b8aa"
+      ],
+      "pdf": "",
+      "defects": [],
+      "objectId": "6937ebf7fc5debd93f32b89d",
+      "unitId": null,
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "6937ec58fc5debd93f32b8bd",
+      "documents": [],
+      "interventions": [],
+      "entrances": [],
+      "createdAt": "2025-12-09T09:31:04.767Z",
+      "updatedAt": "2025-12-09T09:31:04.767Z",
+      "__v": 0
+    },
+    {
+      "name": "Vorbulla test",
+      "propertyType": "Condo",
+      "address": {
+        "street": "Gjakovë",
+        "city": "Gjakovë",
+        "state": "ZH",
+        "zipCode": "1000",
+        "country": "Kosove"
+      },
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "size": {
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 122
+      },
+      "rent_price": 2111,
+      "status": "Available",
+      "description": "",
+      "features": "",
+      "yearBuilt": 1999,
+      "parking": "Garage",
+      "petFriendly": false,
+      "furnished": false,
+      "images": [
+        "/api/images/693acd4326c6d4187559f919"
+      ],
+      "pdf": "",
+      "defects": [],
+      "objectId": "6937ebf7fc5debd93f32b89d",
+      "unitId": "6937ee285ff91a94b65af9c7",
+      "manager": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "_id": "693acd4326c6d4187559f92a",
+      "documents": [],
+      "interventions": [],
+      "entrances": [],
+      "createdAt": "2025-12-11T13:55:15.996Z",
+      "updatedAt": "2025-12-11T13:55:15.996Z",
+      "__v": 0
+    }
+  ],
+  "lastUpdated": "2025-12-11T13:55:23.674Z",
+  "totalCount": 8,
+  "metadata": {
+    "version": "1.0",
+    "description": "Properties data exported from PropInspection system"
+  }
+}

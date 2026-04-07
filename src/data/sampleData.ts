@@ -1,0 +1,271 @@
+import { Property, Client, Agent, Inspection } from '../types/database'
+
+export const sampleProperties: Property[] = [
+  {
+    _id: '1',
+    title: 'Modern Downtown Apartment',
+    address: '123 Oak Street',
+    city: 'San Francisco',
+    property_type: 'Apartment',
+    rent_price: 2500,
+    deposit: 5000,
+    bedrooms: 2,
+    bathrooms: 2,
+    square_feet: 1200,
+    description: 'Beautiful modern apartment in the heart of downtown',
+    status: 'Available',
+    defects: [],
+    notes: 'Recently renovated',
+    created_at: new Date('2024-01-01'),
+    updated_at: new Date('2024-01-01')
+  },
+  {
+    _id: '2',
+    title: 'Cozy Suburban House',
+    address: '456 Pine Avenue',
+    city: 'Oakland',
+    property_type: 'House',
+    rent_price: 3200,
+    deposit: 6400,
+    bedrooms: 3,
+    bathrooms: 2,
+    square_feet: 1800,
+    description: 'Family-friendly house with garden',
+    status: 'Occupied',
+    defects: ['Minor wall damage', 'Leaky faucet'],
+    notes: 'Good tenant, lease expires next year',
+    created_at: new Date('2024-01-02'),
+    updated_at: new Date('2024-01-02')
+  },
+  {
+    _id: '3',
+    title: 'Luxury Penthouse',
+    address: '789 Elm Drive',
+    city: 'San Francisco',
+    property_type: 'Penthouse',
+    rent_price: 5500,
+    deposit: 11000,
+    bedrooms: 3,
+    bathrooms: 3,
+    square_feet: 2200,
+    description: 'Stunning penthouse with city views',
+    status: 'Maintenance',
+    defects: ['HVAC needs service'],
+    notes: 'Premium property, high-end finishes',
+    created_at: new Date('2024-01-03'),
+    updated_at: new Date('2024-01-03')
+  },
+  {
+    _id: '4',
+    title: 'Studio Loft',
+    address: '321 Market Street',
+    city: 'San Francisco',
+    property_type: 'Studio',
+    rent_price: 1800,
+    deposit: 3600,
+    bedrooms: 1,
+    bathrooms: 1,
+    square_feet: 600,
+    description: 'Modern studio in trendy neighborhood',
+    status: 'Available',
+    defects: [],
+    notes: 'Perfect for young professionals',
+    created_at: new Date('2024-01-04'),
+    updated_at: new Date('2024-01-04')
+  },
+  {
+    _id: '5',
+    title: 'Family Townhouse',
+    address: '654 Sunset Blvd',
+    city: 'Berkeley',
+    property_type: 'Townhouse',
+    rent_price: 4200,
+    deposit: 8400,
+    bedrooms: 4,
+    bathrooms: 3,
+    square_feet: 2500,
+    description: 'Spacious townhouse with backyard',
+    status: 'Available',
+    defects: ['Garden needs maintenance'],
+    notes: 'Great for families with children',
+    created_at: new Date('2024-01-05'),
+    updated_at: new Date('2024-01-05')
+  }
+]
+
+export const sampleClients: Client[] = [
+  {
+    _id: '1',
+    firstName: 'John',
+    lastName: 'Smith',
+    email: 'john.smith@email.com',
+    phone: '+1 (555) 123-4567',
+    status: 'active',
+    notes: 'Reliable tenant, always pays on time',
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01')
+  },
+  {
+    _id: '2',
+    firstName: 'Emma',
+    lastName: 'Wilson',
+    email: 'emma.wilson@email.com',
+    phone: '+1 (555) 987-6543',
+    status: 'prospect',
+    notes: 'Looking for 2-bedroom apartment downtown',
+    createdAt: new Date('2024-01-02'),
+    updatedAt: new Date('2024-01-02')
+  },
+  {
+    _id: '3',
+    firstName: 'James',
+    lastName: 'Brown',
+    email: 'james.brown@email.com',
+    phone: '+1 (555) 456-7890',
+    status: 'inactive',
+    notes: 'Moved out last month, good references',
+    createdAt: new Date('2024-01-03'),
+    updatedAt: new Date('2024-01-03')
+  },
+  {
+    _id: '4',
+    firstName: 'Sarah',
+    lastName: 'Davis',
+    email: 'sarah.davis@email.com',
+    phone: '+1 (555) 234-5678',
+    status: 'active',
+    notes: 'New tenant, very responsive',
+    createdAt: new Date('2024-01-04'),
+    updatedAt: new Date('2024-01-04')
+  },
+  {
+    _id: '5',
+    firstName: 'Michael',
+    lastName: 'Johnson',
+    email: 'michael.johnson@email.com',
+    phone: '+1 (555) 345-6789',
+    status: 'prospect',
+    notes: 'Interested in luxury properties',
+    createdAt: new Date('2024-01-05'),
+    updatedAt: new Date('2024-01-05')
+  }
+]
+
+export const sampleAgents: Agent[] = [
+  {
+    _id: '1',
+    first_name: 'Sarah',
+    last_name: 'Johnson',
+    email: 'sarah.johnson@propinspect.com',
+    phone: '+1 (555) 123-4567',
+    status: 'Active',
+    specialties: ['Residential', 'Commercial'],
+    workload: 8,
+    rating: 4.9,
+    completed_inspections: 152,
+    created_at: new Date('2024-01-01'),
+    updated_at: new Date('2024-01-01')
+  },
+  {
+    _id: '2',
+    first_name: 'Mike',
+    last_name: 'Davis',
+    email: 'mike.davis@propinspect.com',
+    phone: '+1 (555) 987-6543',
+    status: 'Active',
+    specialties: ['Residential', 'Safety'],
+    workload: 12,
+    rating: 4.7,
+    completed_inspections: 89,
+    created_at: new Date('2024-01-02'),
+    updated_at: new Date('2024-01-02')
+  },
+  {
+    _id: '3',
+    first_name: 'Lisa',
+    last_name: 'Chen',
+    email: 'lisa.chen@propinspect.com',
+    phone: '+1 (555) 456-7890',
+    status: 'Busy',
+    specialties: ['Commercial', 'Industrial'],
+    workload: 15,
+    rating: 4.8,
+    completed_inspections: 203,
+    created_at: new Date('2024-01-03'),
+    updated_at: new Date('2024-01-03')
+  },
+  {
+    _id: '4',
+    first_name: 'David',
+    last_name: 'Martinez',
+    email: 'david.martinez@propinspect.com',
+    phone: '+1 (555) 567-8901',
+    status: 'Active',
+    specialties: ['Residential', 'Environmental'],
+    workload: 6,
+    rating: 4.6,
+    completed_inspections: 67,
+    created_at: new Date('2024-01-04'),
+    updated_at: new Date('2024-01-04')
+  },
+  {
+    _id: '5',
+    first_name: 'Jennifer',
+    last_name: 'Taylor',
+    email: 'jennifer.taylor@propinspect.com',
+    phone: '+1 (555) 678-9012',
+    status: 'Unavailable',
+    specialties: ['Commercial', 'Safety'],
+    workload: 0,
+    rating: 4.5,
+    completed_inspections: 134,
+    created_at: new Date('2024-01-05'),
+    updated_at: new Date('2024-01-05')
+  }
+]
+
+export const sampleInspections: Inspection[] = [
+  {
+    _id: '1',
+    property_id: '1',
+    client_id: '1',
+    agent_id: '1',
+    scheduled_date: new Date('2024-01-15'),
+    scheduled_time: '10:00 AM',
+    status: 'completed',
+    inspection_type: 'Move-in Inspection',
+    notes: 'Property in excellent condition',
+    defects_found: [],
+    completion_date: new Date('2024-01-15'),
+    created_at: new Date('2024-01-10'),
+    updated_at: new Date('2024-01-15')
+  },
+  {
+    _id: '2',
+    property_id: '2',
+    client_id: '2',
+    agent_id: '2',
+    scheduled_date: new Date('2024-01-20'),
+    scheduled_time: '2:00 PM',
+    status: 'scheduled',
+    inspection_type: 'Routine Inspection',
+    notes: 'Regular quarterly inspection',
+    defects_found: [],
+    created_at: new Date('2024-01-12'),
+    updated_at: new Date('2024-01-12')
+  },
+  {
+    _id: '3',
+    property_id: '3',
+    client_id: '3',
+    agent_id: '3',
+    scheduled_date: new Date('2024-01-18'),
+    scheduled_time: '11:00 AM',
+    status: 'in-progress',
+    inspection_type: 'Move-out Inspection',
+    notes: 'Checking for damages before tenant departure',
+    defects_found: ['Minor wall scuff'],
+    created_at: new Date('2024-01-14'),
+    updated_at: new Date('2024-01-18')
+  }
+]

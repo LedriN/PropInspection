@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 5000px;
+  }
+}
+
+.expanding-properties {
+  animation: slideDown 0.3s ease-out;
+}
+
+.expanding-properties > * {
+  animation: fadeIn 0.4s ease-out 0.1s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#m-0 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* Remove top margin from modal content - target all modals */
+.fixed.inset-0 .bg-white.rounded-2xl .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0px !important;
+}
+
+/* Remove top padding/margin from modal overlay containers */
+.fixed.inset-0.bg-black.bg-opacity-50 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.custom-bg {
+    background-image: url('./assets/hero-home4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-red {
+    background-color: #8c4a58;
+    color: white;
+}
+
+.custom-btn {
+    background-color: #8d2138;
+    color: white;
+}
