@@ -11,6 +11,7 @@ interface AddClientModalProps {
 
 export function AddClientModal({ isOpen, onClose, onClientAdded }: AddClientModalProps) {
   const [loading, setLoading] = useState(false)
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
